@@ -33,7 +33,7 @@
 				<h3>Statement 1</h3>
 				<h4>It is important to me to talk with my friends every day, sometimes more than once a day</h4>
 				<div class="form-group col-xs-3">
-					<select class="form-control" id="quest1">
+					<select class="form-control" id="stmt1">
 						<option>1 (Strongly Disagree)</option>
 						<option>2</option>
 						<option>3</option>
@@ -47,7 +47,7 @@
 				<h3>Statement 2</h3>
 				<h4>I like to talk about myself all the time</h4>
 				<div class="form-group col-xs-3">
-					<select class="form-control" id="quest2">
+					<select class="form-control" id="stmt2">
 						<option>1 (Strongly Disagree)</option>
 						<option>2</option>
 						<option>3</option>
@@ -61,7 +61,7 @@
 				<h3>Statement 3</h3>
 				<h4>I am interested in group fitness exercises and would like you to be too</h4>
 				<div class="form-group col-xs-3">
-					<select class="form-control" id="quest3">
+					<select class="form-control" id="stmt3">
 						<option>1 (Strongly Disagree)</option>
 						<option>2</option>
 						<option>3</option>
@@ -75,7 +75,7 @@
 				<h3>Statement 4</h3>
 				<h4>My idea of fun rarely involves large groups of drunk people</h4>
 				<div class="form-group col-xs-3">
-					<select class="form-control" id="quest4">
+					<select class="form-control" id="stmt4">
 						<option>1 (Strongly Disagree)</option>
 						<option>2</option>
 						<option>3</option>
@@ -89,7 +89,7 @@
 				<h3>Statement 5</h3>
 				<h4>I think Michael Scott would be the perfect boss</h4>
 				<div class="form-group col-xs-3">
-					<select class="form-control" id="quest5">
+					<select class="form-control" id="stmt5">
 						<option>1 (Strongly Disagree)</option>
 						<option>2</option>
 						<option>3</option>
@@ -103,7 +103,7 @@
 				<h3>Statement 6</h3>
 				<h4>I agree with how Dexter's dad handled Dexter's psychosis</h4>
 				<div class="form-group col-xs-3">
-					<select class="form-control" id="quest6">
+					<select class="form-control" id="stmt6">
 						<option>1 (Strongly Disagree)</option>
 						<option>2</option>
 						<option>3</option>
@@ -117,7 +117,7 @@
 				<h3>Statement 7</h3>
 				<h4>Politically, I consider myself to be just to the right of Attila the Hun</h4>
 				<div class="form-group col-xs-3">
-					<select class="form-control" id="quest7">
+					<select class="form-control" id="stmt7">
 						<option>1 (Strongly Disagree)</option>
 						<option>2</option>
 						<option>3</option>
@@ -131,7 +131,7 @@
 				<h3>Statement 8</h3>
 				<h4>I believe that if there is a God, they have a lot of explaining to do</h4>
 				<div class="form-group col-xs-3">
-					<select class="form-control" id="quest8">
+					<select class="form-control" id="stmt8">
 						<option>1 (Strongly Disagree)</option>
 						<option>2</option>
 						<option>3</option>
@@ -145,7 +145,7 @@
 				<h3>Statement 9</h3>
 				<h4>It's not what you are born with, it's what you make of what you're born with</h4>
 				<div class="form-group col-xs-3">
-					<select class="form-control" id="quest9">
+					<select class="form-control" id="stmt9">
 						<option>1 (Strongly Disagree)</option>
 						<option>2</option>
 						<option>3</option>
@@ -159,7 +159,7 @@
 				<h3>Statement 10</h3>
 				<h4>Gossip is the purest form of judgement</h4>
 				<div class="form-group col-xs-3">
-					<select class="form-control" id="quest10">
+					<select class="form-control" id="stmt10">
 						<option>1 (Strongly Disagree)</option>
 						<option>2</option>
 						<option>3</option>
@@ -173,11 +173,11 @@
 	
 		</form>
 
-		<!-- Modal -->
+		<!-- Modal
   <div class="modal fade" id="friend-modal" role="dialog">
     <div class="modal-dialog">
     
-      <!-- Modal content-->
+      <!-- Modal content
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -188,7 +188,7 @@
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
-      </div>
+      </div>-->
       
     </div>
   </div>
@@ -196,7 +196,7 @@
   	<br>
   	<br>
   </div>
-	</div>
+	</div> -->
 <script type="text/javascript">
 		 
 	$('#submit').on("click", function(){
@@ -211,9 +211,9 @@
 		else{
 			//empty array to hold the value from the survey Statements
 			var answerArray = [];
-			//loop to push the answers from survey to the array (NEED TO UPDATE i< AS StatementS ARE ADDED)
+			//loop to push the answers from survey to the array 
 			for(i=1; i<11; i++){
-				answerArray.push(parseInt($('#quest' + i).val().substring(0,1)));
+				answerArray.push(parseInt($('#stmt' + i).val().substring(0,1)));
 			}
 			//creating an object to hold the newly entered information
 			var newFriend = 
